@@ -21,7 +21,7 @@ spec:
       values: |
         image:
           repository: bmutziu/devops-toolkit
-          tag: 0fcaa6c
+          tag: 19b1fbc
         ingress:
           enabled: false
           host: devops-toolkit.54.194.74.173.xip.io
