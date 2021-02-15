@@ -180,8 +180,10 @@ spec:
       - args: []
         command:
         - controller
-        env: []
-        image: quay.io/bitnami/sealed-secrets-controller:v0.13.1
+        env:
+        - name: SEALED_SECRETS_UPDATE_STATUS
+          value: "1"
+        image: quay.io/bitnami/sealed-secrets-controller:v0.14.1
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
